@@ -1,6 +1,8 @@
 Wedding::Application.routes.draw do
-  get "home/index"
+  get "directions/index"
 
+  get "home/index"
+  get "directions/index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -57,4 +59,8 @@ Wedding::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
+  match '/home', :controller => 'home', :action => 'index'
+  match '/directions', :controller => 'directions', :action => 'index'
+
 end

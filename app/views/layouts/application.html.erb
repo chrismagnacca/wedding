@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html ng-app="weddingApp">
+<html>
 <head>
   <title>Lauren & Christopher</title>
   <%= favicon_link_tag "/assets/favicon.ico" %>
-  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC07QHkm7xFRu6X9stoRDifMgdxudCB-0&sensor=false"></script>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -33,10 +34,10 @@
           <div class="nav-collapse collapse">
             <!-- .nav, .navbar-search, .navbar-form, etc -->
             <ul class="nav">
-              <li><a href="#">Home</a></li>
+              <li><a href="/home">Home</a></li>
               <li><a href="#">Our Story</a></li>
               <li><a href="#">Bridal Party</a></li>
-              <li><a href="#">Directions</a></li>
+              <li><a href="/directions">Directions</a></li>
               <li><a href="#">Accommodations</a></li>
               <li><a href="#">RSVP</a></li>
               <li><a href="#">Guest Book</a></li>

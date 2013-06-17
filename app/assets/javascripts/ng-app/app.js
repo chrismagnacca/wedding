@@ -1,1 +1,0 @@
-var weddingApp  = angular.module('weddingApp', []);

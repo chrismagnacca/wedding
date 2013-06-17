@@ -4,6 +4,8 @@
     <data-source source="LOCAL" name="Rails wedding: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="24d86647-b73f-4459-8167-7ac5dde467e9">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/development_database</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfd9dfdfdfdadfcfdfd8dfdfdfd9dfcfdfd8</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -16,6 +18,8 @@
     <data-source source="LOCAL" name="Rails wedding: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f3bd01a5-cb8f-4d9c-a137-ec20a6f1167d">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/test_database</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfd9dfdfdfdadfcfdfd8dfdfdfd9dfcfdfd8</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -28,6 +32,8 @@
     <data-source source="LOCAL" name="Rails wedding: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="514f95da-81b8-4580-b8a8-2b2bc819ae5f">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/production_database</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfd9dfdfdfdadfcfdfd8dfdfdfd9dfcfdfd8</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>

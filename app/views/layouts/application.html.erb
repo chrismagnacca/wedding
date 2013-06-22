@@ -2,54 +2,26 @@
 <html>
 <head>
   <title>Lauren & Christopher</title>
+  <!-- media query meta tag(s) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bookmark icon -->
   <%= favicon_link_tag "/assets/favicon.ico" %>
-  <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+  <!-- stylesheets -->
+  <%= stylesheet_link_tag href='http://fonts.googleapis.com/css?family=Parisienne' %>
+  <%= stylesheet_link_tag    "application", :media => "all", "data-turbolinks-track" => true %>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC07QHkm7xFRu6X9stoRDifMgdxudCB-0&sensor=false"></script>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <!-- javascripts -->
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <div id="site-container" class="container">
-  <div class="row-fluid">
-    <div class="span12">
-      <h1 id="heading">Lauren & Christopher</h1>
-    </div>
-  </div>
-
-  <div id='nav-container' class='container'>
-    <div class="navbar center">
-      <div class="navbar-inner">
-        <div class="container">
-
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-
-          <!-- everything you want hidden at 940px or less, place within here -->
-          <div class="nav-collapse collapse">
-            <!-- .nav, .navbar-search, .navbar-form, etc -->
-            <ul class="nav">
-              <li><a href="/home">Home</a></li>
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Bridal Party</a></li>
-              <li><a href="/directions">Directions</a></li>
-              <li><a href="#">Accommodations</a></li>
-              <li><a href="#">RSVP</a></li>
-              <li><a href="#">Guest Book</a></li>
-              <li><a href="#">Registry</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <!-- website banner -->
+  <%= render 'shared/banner_text' %>
+  <!-- navigation bar -->
+  <%= render 'shared/navigation' %>
+  <!-- page content -->
   <div id='body-container'>
     <%= yield %>
   </div>

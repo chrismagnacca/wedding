@@ -1,0 +1,2 @@
+class BridalPartyController < ApplicationController
+end

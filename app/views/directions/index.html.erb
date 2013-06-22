@@ -12,3 +12,80 @@
     </div>
   </div>
 </div>
+<!-- google maps api used inline to suppress loading to the directions page -->
+<script type='text/javascript'>
+    function initialize() {
+
+        var churchLatLng = new google.maps.LatLng(40.134382,-82.933042); /* st.paul's church */
+        var receptionLatLng = new google.maps.LatLng(40.168372,-82.892042); /* medallion golf club */
+
+        var mapOptions = {
+            center: new google.maps.LatLng(40.173233,-82.89943), /* map-center */
+            zoom: 13,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+                mapOptions);
+
+        var churchContentString = "St. Paul's Church<br/>" +
+                "313 N State St,  ‎ <br />" +
+                "Westerville, OH 43082";
+
+        var receptionContentString = "Medallion Golf Club<br/>" +
+                "5500 Club Drive,  ‎ <br />" +
+                "Westerville, OH 43082";
+
+        var churchInfoWindow = new google.maps.InfoWindow({
+            content: churchContentString
+        });
+
+        var receptionInfoWindow = new google.maps.InfoWindow({
+            content: receptionContentString
+        });
+
+        var churchMarker = new google.maps.Marker({
+            position: churchLatLng,
+            map: map,
+            title: ""
+        });
+
+        var receptionMarker = new google.maps.Marker({
+            position: receptionLatLng,
+            map: map,
+            title: ""
+        });
+
+        var myCoord = [
+            churchLatLng,
+            receptionLatLng
+        ];
+
+        var service = new google.maps.DirectionsService();
+        var directionsDisplay = new google.maps.DirectionsRenderer();
+
+
+        var waypts = [];
+        for(j=1;j<myCoord.length-1;j++){
+            waypts.push({location: myCoord[j],
+                stopover: true});
+        }
+
+        var request = {
+            origin: myCoord[0],
+            destination: myCoord[myCoord.length-1],
+            travelMode: google.maps.DirectionsTravelMode.DRIVING
+        };
+        service.route(request,function(result, status) {
+            if(status == google.maps.DirectionsStatus.OK) {
+                directionsDisplay.setDirections(result);
+            } else { alert("Directions request failed:" + status); }
+        });
+
+        directionsDisplay.setMap(map);
+        directionsDisplay.setOptions( { suppressMarkers: true } );
+        receptionInfoWindow.open(map, receptionMarker);
+        churchInfoWindow.open(map, churchMarker);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>

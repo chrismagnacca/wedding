@@ -11,8 +11,17 @@ html, body {
     background-color: #000099; /* azure */
     height: 100%;
 
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.2em;
+}
+
+div.line-break {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 1.5em;
+    border-top: 1px dotted #838f9f;
 }
 
 /* directions.html.erb */
@@ -39,7 +48,7 @@ div#map-canvas {
 h1#heading{
     padding-top: 0.250em;
     font-family: 'Parisienne', cursive;
-    font-weight: 200;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -49,12 +58,14 @@ h1#heading{
 
 #site-container {
     min-height: 100%;
+    box-shadow: 0.375em 0px 0.625em -0.438em #000, -0.375em 0px 0.625em -0.438em #000;
     background-color: #F8F8F8; /* off-white */
 }
 
 #nav-container {
     width: 95%;
-    font-weight: 100;
+    font-size: 0.90em;
+    font-weight: 400;
     font-color: #000000;
     letter-spacing: 0.125em;
     margin-top: 0.750em; /* 12px */

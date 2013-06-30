@@ -4,11 +4,11 @@
   Use Font Awesome icons (default)
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
-  */
+*/
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-    background-color: #000099; /* azure */
+    background-color: #3031ea;
     height: 100%;
 
     font-weight: 400;
@@ -57,9 +57,10 @@ h1#heading{
 }
 
 #site-container {
+    padding-bottom: 2em;
     min-height: 100%;
     box-shadow: 0.375em 0px 0.625em -0.438em #000, -0.375em 0px 0.625em -0.438em #000;
-    background-color: #F8F8F8; /* off-white */
+    background-color: #E9E9E9; /* off-white */
 }
 
 #nav-container {

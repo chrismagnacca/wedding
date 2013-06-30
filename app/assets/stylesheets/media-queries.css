@@ -9,12 +9,19 @@
         max-width: 60.00em;
     }
 
+    .navbar .nav, .navbar .nav > li {
+        display: inline;
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px){
     body {
         max-width: 47.00em;
+    }
+
+    .navbar .nav, .navbar .nav > li {
+        display: inline;
     }
 }
 

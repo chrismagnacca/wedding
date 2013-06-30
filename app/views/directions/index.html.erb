@@ -4,14 +4,51 @@
         max-width: none !important;
     }
 </style>
+
 <div id='directions-container' class='container'>
   <div class="row-fluid">
-    <br />
+    <div class="span12">
+      <h3 id="directions-header" class="directions-header">Location</h3>
+      <div class="line-break"></div>
+      <div class="row-fluid">
+
+        <div class="span6">
+          <h4 id="ceremony-header">Ceremony</h4>
+          <ul id="ceremony-list" class="pull-right">
+            <li>St. Paul's Church</li>
+            <li>313 N State Street</li>
+            <li>Westerville, OH 43082</li>
+            <li><br /></li>
+          </ul>
+        </div>
+
+        <div class="span6">
+          <h4 id="reception-header">Reception</h4>
+          <ul id="reception-list" class="pull-left">
+            <li>Medallion Golf Club</li>
+            <li>5500 Club Drive</li>
+            <li>Westerville, OH 43082</li>
+            <li><br /></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row-fluid">
+    <div class="span12">
+      <br />
+      <h3 id="location-header" class="directions-header">Directions</h3>
+      <div class="line-break"></div>
+    </div>
+
     <div class="google-map">
       <div id="map-canvas" style="width: 800px; height: 600px;"></div>
     </div>
   </div>
 </div>
+
 <!-- google maps api used inline to suppress loading to the directions page -->
 <script type='text/javascript'>
     function initialize() {

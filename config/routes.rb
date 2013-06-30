@@ -1,4 +1,8 @@
 Wedding::Application.routes.draw do
+  get "rsvp/index"
+
+  get "registry/index"
+
   get 'home/index'
   get 'bridal_party/index'
   get 'directions/index'
@@ -62,5 +66,7 @@ Wedding::Application.routes.draw do
   match '/home', :controller => 'home', :action => 'index'
   match '/directions', :controller => 'directions', :action => 'index'
   match '/bridal_party', :controller => 'bridal_party', :action => 'index'
-
+  match '/accommodations', :controller => 'accommodations', :action => 'index'
+  match '/rsvp', :controller => 'rsvp', :action => 'index'
+  match '/registry', :controller => 'registry', :action => 'index'
 end

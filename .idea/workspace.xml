@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/media-queries.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/media-queries.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wedding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,7 +91,7 @@
       <file leaf-file-name="media-queries.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/media-queries.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="20" selection-start="628" selection-end="628" vertical-scroll-proportion="0.52069426">
+            <state line="78" column="22" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.81975967">
               <folding />
             </state>
           </provider>
@@ -834,7 +833,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/media-queries.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="628" selection-end="628" vertical-scroll-proportion="0.52069426">
+        <state line="78" column="22" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.81975967">
           <folding />
         </state>
       </provider>

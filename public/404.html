@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The page you were looking for doesn't exist (404)</title>
-  <style type="text/css">
-    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
-    div.dialog {
-      width: 25em;
-      padding: 0 4em;
-      margin: 4em auto 0 auto;
-      border: 1px solid #ccc;
-      border-right-color: #999;
-      border-bottom-color: #999;
-    }
-    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
-  </style>
+    <title>Lauren & Christopher</title>
+    <!-- media query meta tag(s) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bookmark icon -->
+    <%= favicon_link_tag "/assets/favicon.ico" %>
+    <!-- stylesheets -->
+    <%= stylesheet_link_tag href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,400' %>
+    <%= stylesheet_link_tag    "application", :media => "all", "data-turbolinks-track" => true %>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC07QHkm7xFRu6X9stoRDifMgdxudCB-0&sensor=false"></script>
+    <!-- javascripts -->
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
 </head>
-
 <body>
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <h1>The page you were looking for doesn't exist.</h1>
-    <p>You may have mistyped the address or the page may have moved.</p>
+<!-- This file lives in public/404.html -->
+  <div id='body-container'>
+  <div id='index-container' class='container'>
+      <div id='placeholder-header'>Whoops!</div>
+      <div id="placeholder-container">
+          <img src="assets/1024x681-404.jpg" alt="Save the Date!">
+      </div>
+      <div id='placeholder-date'>
+          The page you were looking for doesn't exist!
+      </div>
+      <div id='placeholder-reminder'>
+          <a href='/'>Need help going home?</a>
+      </div>
   </div>
+  </div>
+
 </body>
 </html>

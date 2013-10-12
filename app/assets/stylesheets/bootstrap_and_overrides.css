@@ -8,7 +8,7 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-    background-color: #3031ea;
+    background-color: #333;
     height: 100%;
 
     font-weight: 400;
@@ -44,9 +44,43 @@ div#map-canvas {
     margin-right: auto;
 }
 
+/* save the date placeholder */
+#placeholder-container {
+    max-width: 64.000em;
+    max-height: 42.563em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#placeholder-container img {
+    border: 1px solid #8C8C8C;
+    border-radius: 0.500em;
+}
+
+div#placeholder-header,
+div#placeholder-date,
+div#placeholder-reminder {
+    margin-top: 0.600em;
+    margin-bottom: 0.600em;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Roboto Slab', cursive;
+}
+
+div#placeholder-header,
+div#placeholder-date {
+    font-size: 4em;
+    font-weight: 300;
+}
+
+div#placeholder-reminder {
+    font-size: 2em;
+    font-weight: 300;
+}
+
 /* application.html.erb */
 h1#heading{
-    padding-top: 0.250em;
+    padding-top: 0.125em;
     font-family: 'Parisienne', cursive;
     font-weight: 400;
     text-align: center;

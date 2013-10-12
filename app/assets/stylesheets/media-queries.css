@@ -5,27 +5,78 @@
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-    body {
-        max-width: 60.00em;
+    /* save the date placeholder */
+    div#placeholder-header,
+    div#placeholder-date,
+    div#placeholder-reminder {
+        margin-top: 0.600em;
+        margin-bottom: 0.600em;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: 'Roboto Slab', cursive;
     }
 
-    .navbar .nav, .navbar .nav > li {
-        display: inline;
+    div#placeholder-header,
+    div#placeholder-date {
+        font-size: 3em;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+
+    div#placeholder-reminder {
+        font-size: 1.5em;
+        font-weight: 300;
     }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px){
-    body {
-        max-width: 47.00em;
+    /* save the date placeholder */
+    div#placeholder-header,
+    div#placeholder-date,
+    div#placeholder-reminder {
+        margin-top: 0.600em;
+        margin-bottom: 0.600em;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: 'Roboto Slab', cursive;
     }
 
-    .navbar .nav, .navbar .nav > li {
-        display: inline;
+    div#placeholder-header,
+    div#placeholder-date {
+        font-size: 3em;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+
+    div#placeholder-reminder {
+        font-size: 1.5em;
+        font-weight: 300;
     }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    /* save the date placeholder */
+    div#placeholder-header,
+    div#placeholder-date,
+    div#placeholder-reminder {
+        margin-top: 0.600em;
+        margin-bottom: 0.600em;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: 'Roboto Slab', cursive;
+    }
 
+    div#placeholder-header,
+    div#placeholder-date {
+        font-size: 2em;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+
+    div#placeholder-reminder {
+        font-size: 0.5em;
+        font-weight: 300;
+    }
 }

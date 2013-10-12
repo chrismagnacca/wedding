@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/errors_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wedding.iml" afterPath="$PROJECT_DIR$/.idea/wedding.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/media-queries.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/media-queries.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wedding.iws" />
@@ -30,15 +24,16 @@
     <file path="/_navigation.html.erb" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1372547674136" ignored="false" />
     <file path="/bridal_party.css.scss" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1371935652825" ignored="false" />
     <file path="$PROJECT_DIR$/log/development.log" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1371935908654" ignored="false" />
-    <file path="/media-queries.css" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1372547435267" ignored="false" />
+    <file path="/media-queries.css" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1381595309270" ignored="false" />
     <file path="/accommodations_controller.rb" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1372547505182" ignored="false" />
     <file path="/bridal_party_controller.rb" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1372547512767" ignored="false" />
     <file path="/directions.css.scss" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1372551463050" ignored="false" />
     <file path="/home.js.coffee" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1372550890250" ignored="false" />
     <file path="/rsvp.css.scss" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1372570319274" ignored="false" />
     <file path="/rsvp_controller.rb" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1372570554373" ignored="false" />
-    <file path="/404.html" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1381593694588" ignored="false" />
+    <file path="/404.html" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1381595045222" ignored="false" />
     <file path="/errors_controller.rb" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1381593531070" ignored="false" />
+    <file path="/four-oh-four.css.scss" changelist="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" time="1381594939688" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,10 +80,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="404.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="47" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.5898876">
+            <state line="28" column="47" selection-start="1248" selection-end="1248" vertical-scroll-proportion="-17.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="media-queries.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/media-queries.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="20" selection-start="628" selection-end="628" vertical-scroll-proportion="0.52069426">
               <folding />
             </state>
           </provider>
@@ -97,7 +101,7 @@
       <file leaf-file-name="bootstrap_and_overrides.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.0">
+            <state line="46" column="0" selection-start="922" selection-end="1547" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,9 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/bridal_party_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_navigation.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/registry/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/directions.css.scss" />
         <option value="$PROJECT_DIR$/app/views/directions/index.html.erb" />
@@ -136,7 +137,10 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/errors_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/404.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/four-oh-four.css.scss" />
         <option value="$PROJECT_DIR$/public/404.html" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/media-queries.css" />
       </list>
     </option>
   </component>
@@ -209,6 +213,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -723,16 +745,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/home.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="57" selection-start="274" selection-end="274" vertical-scroll-proportion="0.10013351" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bridal_party.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="266" selection-end="312" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directions/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="110" selection-end="350" vertical-scroll-proportion="0.14482759" />
@@ -778,20 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/media-queries.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="265" selection-end="265" vertical-scroll-proportion="0.26034713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="331" vertical-scroll-proportion="-0.0">
@@ -820,9 +818,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="922" selection-end="1547" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="47" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.5898876">
+        <state line="28" column="47" selection-start="1248" selection-end="1248" vertical-scroll-proportion="-17.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/media-queries.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="20" selection-start="628" selection-end="628" vertical-scroll-proportion="0.52069426">
           <folding />
         </state>
       </provider>

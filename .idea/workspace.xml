@@ -91,7 +91,7 @@
       <file leaf-file-name="media-queries.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/media-queries.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="22" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.81975967">
+            <state line="1" column="23" selection-start="43" selection-end="43" vertical-scroll-proportion="0.020026702">
               <folding />
             </state>
           </provider>
@@ -833,7 +833,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/media-queries.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="22" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.81975967">
+        <state line="1" column="23" selection-start="43" selection-end="43" vertical-scroll-proportion="0.020026702">
           <folding />
         </state>
       </provider>

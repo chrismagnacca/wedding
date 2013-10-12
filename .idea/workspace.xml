@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e4aa2a9-6a51-4add-b81c-c17eaa2b5fbc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/media-queries.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/media-queries.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
     </list>
     <ignored path="wedding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,19 +88,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media-queries.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="media-queries.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/media-queries.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="23" selection-start="43" selection-end="43" vertical-scroll-proportion="0.020026702">
+            <state line="5" column="8" selection-start="136" selection-end="155" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap_and_overrides.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap_and_overrides.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="922" selection-end="1547" vertical-scroll-proportion="0.0">
+            <state line="72" column="23" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.7196262">
               <folding />
             </state>
           </provider>
@@ -133,13 +133,13 @@
         <option value="$PROJECT_DIR$/app/controllers/rsvp_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/errors_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/404.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/four-oh-four.css.scss" />
         <option value="$PROJECT_DIR$/public/404.html" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/media-queries.css" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
       </list>
     </option>
   </component>
@@ -817,13 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="922" selection-end="1547" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="47" selection-start="1248" selection-end="1248" vertical-scroll-proportion="-17.5">
@@ -833,7 +826,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/media-queries.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="23" selection-start="43" selection-end="43" vertical-scroll-proportion="0.020026702">
+        <state line="5" column="8" selection-start="136" selection-end="155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="23" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.7196262">
           <folding />
         </state>
       </provider>

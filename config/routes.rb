@@ -2,6 +2,7 @@ Wedding::Application.routes.draw do
   #get "rsvp/index"
   #get "registry/index"
   get 'home/index'
+  get 'home/hidden'
   #get 'bridal_party/index'
   #get 'directions/index'
   # The priority is based upon order of creation:

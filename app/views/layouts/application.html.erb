@@ -9,7 +9,7 @@
   <!-- stylesheets -->
   <%= stylesheet_link_tag href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,400' %>
   <%= stylesheet_link_tag    "application", :media => "all", "data-turbolinks-track" => true %>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC07QHkm7xFRu6X9stoRDifMgdxudCB-0&sensor=false"></script>
+  <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC07QHkm7xFRu6X9stoRDifMgdxudCB-0&sensor=false"></script>-->
   <!-- javascripts -->
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -40,6 +40,27 @@
 
 <div id="content-container">
   <div id="home-container">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span8" id="welcome-message">
+          <h3 id="welcome-header">Lauren and Christopher are getting married!</h3>
+        </div>
+        <div class="span4" id="rsvp-message">
+          <div class="row-fluid">
+            <div class="span12">
+              <div class="btn-rsvp">
+                <button type="button" class="btn btn-primary btn-lg">RSVP</button>
+              </div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span12">
+              We are getting married in:
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

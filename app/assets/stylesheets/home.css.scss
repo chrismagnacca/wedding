@@ -1,141 +1,51 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$gray: #e0e0e0;
+$white: #ffffff;
+$black: #000000;
+
 #site-container {
-  width: 100%;
-  height: 80%;
-  background-color: #B2B2B2 ; /* off-white */
+  @extend .center;
+
+  max-width: 64.000em; /* 1280px */
+  height: 60.000em;
 }
 
-#header {
-  margin-top: -1.125em;
-  width: 100%; /* 960px / 960 */
-}
+#carousel-container {
+  @extend .center, .rounded-corners;
+  
+  width: 93.75%; /* 900px/960px */
 
-#body-container {
-  width: 90%;
-  height: 100%;
-}
-
-#blue-bar {
-  width: 100%;
-  height: 1.0em;
-  border: 0.063em solid #8C8C8C;
-
-  background-color: #006dcc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
-  border-color: #0044cc #0044cc #002a80;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-}
-
-#title {
-  width: 15%;
-  color: #FFFFFF;
-  position: relative;
-  top: -0.500em;
-  border-radius: 0.500em; /* 8px */
-  padding-top: 0.750em; /* 12px */
-  padding-bottom: 6.5em; /* 100px */
-  padding-left: 9.375em; /* 150px */
-  padding-right: 9.375em; /* 150px */
-  text-align: center;
-  left: 50%;
-  margin: 0 0 0 -15.625%;
-
-
-
-  border: 0.125em solid #000000;
-
-  background: #7d7e7d; /* Old browsers */
-  background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
-  background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
-}
-
-#content-container {
-  height: 50%;
-}
-
-.btn {
-  width: 100%;
-  height: 3em;
-  font-size: 1.5em;
-
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#welcome-message {
-  text-align: center;
-  height: 25em;
-  border-right: 1px solid #8C8C8C;
+  background: $white;
 }
 
 #home-container {
-  width: 79.166666666667%;
-  height: 25.000em;
-  background-color: #F9F9F9;
-  left: 50%;
-  position: relative;
-  border-radius: 0.500em; /* 8px */
-  border: 0.125em solid #000000;
-  margin: -6.250em 0 0 -39.583333333334%;
+  @extend .center, .rounded-corners;
 
+  height: 30%;
+  width: 85%; /* 1024px/1280px */
+
+  position: relative;
+  z-index: 10;
+
+  margin-top: -3.0em;
+
+  background: $gray; /* slate */
 
 }
 
-/* custom navigation bar */
-ul#navigation-bar {
-  width: 100%;
+.center {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  list-style-type:none;
-  border: 0.063em solid #8C8C8C;
-  padding-top: 0.750em;
-  padding-bottom: 0.750em;
-
-  background: rgb(255,255,255); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 }
 
-li.nav-item {
-  font-family: 'Roboto Slab', cursive;
-  font-weight: 400;
-  font-size: 1.250em;
-  display:inline;
-  padding-left: 0.313em;
+.rounded-corners {
+  border-radius: 0.125em;
 }
 
-li.nav-item a {
-  width: 6.00em; /* 96px */
-  text-align: center;
-  text-decoration:none;
-  padding:0.20em 0.60em;
-
+.border {
+  border: 2px solid $black;
 }
 
-li#nav-right{
-  padding-left: 15%;
-}
 
-li#nav-left {
-  padding-right: 15%;
-}

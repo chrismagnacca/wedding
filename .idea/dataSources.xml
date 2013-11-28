@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="2300667617">
-    <data-source source="LOCAL" name="Rails wedding: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="24d86647-b73f-4459-8167-7ac5dde467e9">
+    <data-source source="LOCAL" name="Rails wedding: development" uuid="24d86647-b73f-4459-8167-7ac5dde467e9">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/development_database</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/wedding_development</jdbc-url>
       <user-name>wedding</user-name>
       <libraries>
         <library>
@@ -14,9 +15,10 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails wedding: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f3bd01a5-cb8f-4d9c-a137-ec20a6f1167d">
+    <data-source source="LOCAL" name="Rails wedding: test" uuid="f3bd01a5-cb8f-4d9c-a137-ec20a6f1167d">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/test_database</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/wedding_test</jdbc-url>
       <user-name>wedding</user-name>
       <libraries>
         <library>
@@ -27,9 +29,10 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails wedding: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="514f95da-81b8-4580-b8a8-2b2bc819ae5f">
+    <data-source source="LOCAL" name="Rails wedding: production" uuid="514f95da-81b8-4580-b8a8-2b2bc819ae5f">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/production_database</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/wedding_production</jdbc-url>
       <user-name>wedding</user-name>
       <libraries>
         <library>

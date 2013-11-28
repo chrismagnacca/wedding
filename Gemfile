@@ -42,4 +42,4 @@ gem 'jquery-rails'
 
 
 # Twitter Bootstrap Rails
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', '~>2.2.8'

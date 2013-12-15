@@ -12,6 +12,11 @@ $black: #000000;
   height: 60.000em;
 }
 
+#main-content {
+  height: 681px;
+  padding-bottom: 5px;
+}
+
 #carousel-container {
   @extend .center, .rounded-corners;
 

@@ -3,6 +3,12 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
+  $('a#home').on('click', (e) ->
+    e.preventDefault()
+    $.get '/home', (data) ->
+      $('#main-content').html(data.html)
+  )
+
   $('.carousel').carousel({ interval: 3500, pause: "hover" })
 
   note = $('#note')

@@ -14,30 +14,47 @@ $black: #000000;
 
 #carousel-container {
   @extend .center, .rounded-corners;
-  
-  width: 93.75%; /* 900px/960px */
 
   background: $white;
 }
 
 #home-container {
-  @extend .center, .rounded-corners;
+  @extend .center, .rounded-corners, .max-width;
 
-  height: 30%;
-  width: 85%; /* 1024px/1280px */
+  height: 17.5em; /* 280px */
 
-  position: relative;
-  z-index: 10;
+  margin-top: -1.125em; /* 18px */
 
-  margin-top: -3.0em;
-
-  background: $gray; /* slate */
-
+  background: $gray;
 }
 
+#welcome {
+  @extend .border-right;
+
+  height: 17.5em;
+}
+
+#rsvp {
+  width: 100%;
+  margin-top: 10%;
+}
+
+#rsvp button {
+  height: 60px;
+  width: 90%;
+
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+/* reused */
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+
+.max-width {
+  max-width: 64.000em;
 }
 
 .rounded-corners {
@@ -45,7 +62,11 @@ $black: #000000;
 }
 
 .border {
-  border: 2px solid $black;
+  border: 1px solid $black;
+}
+
+.border-right {
+  border-right: 1px solid $black;
 }
 
 

@@ -47,7 +47,20 @@ $black: #000000;
   margin-right: auto;
 }
 
-/* reused */
+#rsvp-heading {
+  font-weight: 700;
+}
+
+h3#welcome-heading {
+  @extend .cursive-heading;
+
+  text-align: center;
+}
+
+.cursive-heading {
+  font-family: 'Roboto Slab', cursive;
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;

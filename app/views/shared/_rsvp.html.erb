@@ -1,0 +1,65 @@
+<%=form_tag('/rsvp', method: 'rsvp') do %>
+
+    <div id="name-row" class="row-fluid">
+      <br />
+      <div class="span4"><input id="name-input" class="input-large" type="text" placeholder="Name"></div>
+    </div>
+
+    <div id="attending-row" class="row-fluid">
+      <div class="span6">
+        <label id="attending-label">Attending?</label>
+        <label class="radio inline">
+          <input type="radio" name="attendingRadios" id="attendingYes" value="yes"> Yes
+        </label>
+        <label class="radio inline">
+          <input type="radio" name="attendingRadios" id="attendingNo" value="no"> No
+        </label>
+      </div>
+
+      <div id="attending-food-row" class="row-fluid">
+        <div class="span6">
+          <label id="attending-label">Dinner Choice?</label>
+          <label class="radio inline">
+            <input type="radio" name="attendingFoodRadios" id="attendingChicken" value="yes"> Chicken
+          </label>
+          <label class="radio inline">
+            <input type="radio" name="attendingFoodRadios" id="attendingSteak" value="no"> Steak
+          </label>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="guest-row" class="row-fluid">
+      <div class="span6">
+        <label id="guest-label">Guest?</label>
+        <input id="guest-name-input" class="input-large" type="text" placeholder="Guest Name">
+        <label class="radio inline">
+          <input type="radio" name="guestRadios" id="guestYes" value="yes"> Yes
+        </label>
+        <label class="radio inline">
+          <input type="radio" name="guestRadios" id="guestNo" value="no"> No
+        </label>
+      </div>
+
+      <div id="guest-food-row" class="row-fluid">
+        <div class="span6">
+          <label id="attending-label">Dinner Choice?</label>
+          <label class="radio inline">
+            <input type="radio" name="guestFoodRadios" id="guestChicken" value="yes"> Chicken
+          </label>
+          <label class="radio inline">
+            <input type="radio" name="guestFoodRadios" id="guestSteak" value="no"> Steak
+          </label>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="comment-row" class="row-fluid">
+      <div class="span12">
+        <label><textarea id="rsvp-text" placeholder="Comments" maxlength="500" rows=10></textarea></label>
+      </div>
+    </div>
+
+<% end %>

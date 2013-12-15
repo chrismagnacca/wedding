@@ -1,3 +1,40 @@
 // Place all the styles related to the rsvp controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#attending-row {
+  @extend .form-margin;
+}
+
+#attending-food-row {
+  display: none;
+}
+
+#guest-food-row {
+  display: none;
+}
+
+#guest-row {
+  @extend .form-margin;
+  margin-top: 2%;
+  display: none;
+}
+
+#guest-name-input {
+  display: none;
+  margin-top: 2%;
+}
+
+#comment-row {
+  @extend .form-margin;
+}
+
+#comment-row textarea {
+  width: 92.5%;
+  resize: none;
+}
+
+.form-margin {
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
+}

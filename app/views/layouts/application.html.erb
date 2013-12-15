@@ -50,5 +50,21 @@
 
 <%= yield %>
 
+
+<!-- Modal -->
+<div id="rsvp-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="rsvp-label">RSVP</h3>
+  </div>
+  <div class="rsvp-body">
+    <%= render 'shared/rsvp' %>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">RSVP</button>
+  </div>
+</div>
+
 </body>
 </html>

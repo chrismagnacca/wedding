@@ -3,10 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  $('#rsvp button').on('click', ->
-
-  )
-
   $('.carousel').carousel({ interval: 3500, pause: "hover" })
 
   note = $('#note')

@@ -3,6 +3,7 @@ Wedding::Application.routes.draw do
   get 'home/hidden'
   get 'home/countdown'
   get 'directions/index'
+  get 'bridal_party/index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -63,9 +64,9 @@ Wedding::Application.routes.draw do
 
   match '/home', :controller => 'home', :action => 'index'
   match '/directions', :controller => 'directions', :action => 'index'
-  #match '/bridal_party', :controller => 'bridal_party', :action => 'index'
-  #match '/accommodations', :controller => 'accommodations', :action => 'index'
-  #match '/rsvp', :controller => 'rsvp', :action => 'index'
-  #match '/registry', :controller => 'registry', :action => 'index'
+  match '/bridal_party', :controller => 'bridal_party', :action => 'index'
+  match '/accommodations', :controller => 'accommodations', :action => 'index'
+  match '/rsvp', :controller => 'rsvp', :action => 'index'
+  match '/registry', :controller => 'registry', :action => 'index'
   match '*a', :to => 'errors#routing'
 end

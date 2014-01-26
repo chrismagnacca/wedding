@@ -1,0 +1,25 @@
+!!! 5
+%html
+%head
+  %title
+    = "Lauren & Christopher"
+  %meta{http_equiv:"X-UA-Compatible", content: "IE=edge", charset:"utf-8"}
+  %meta{name:"viewport", content: "width=device-width, initial-scale=1.0"}
+  = favicon_link_tag "/assets/favicon.ico"
+  = stylesheet_link_tag "application", media: "all"
+  = javascript_include_tag "application"
+  %script{type: "text/javascript", src:"https://maps.googleapis.com/maps/api/js?key=AIzaSyBC07QHkm7xFRu6X9stoRDifMgdxudCB-0&sensor=false"}
+
+  / [if lt IE 9]><!
+  %script{type: "text/javascript", src:"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"}
+  %script{type: "text/javascript", src:"https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"}
+  / <![endif]
+
+  = csrf_meta_tags
+
+%body
+  .container
+    .header
+      = render "shared/navigation"
+      .jumbotron
+        = yield

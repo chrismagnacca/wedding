@@ -1,0 +1,11 @@
+// Place all the styles related to the Directions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#map-canvas {
+  width: 100%;
+  height: 33.750em;
+  max-width: inherit;
+  border: 0.088em solid black;
+  border-radius: 0.188em;
+}

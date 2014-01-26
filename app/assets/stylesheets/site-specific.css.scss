@@ -1,5 +1,5 @@
 .container {
-  max-width: 960px;
+  max-width: 60.000em; /* 960px */
 }
 
 .header {
@@ -12,6 +12,3 @@
   text-align: center;
 }
 
-.navbar-nav li:first-child {
-  margin-left: 32px;
-}

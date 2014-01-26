@@ -4,7 +4,7 @@ html, body {
     line-height: 1.2em;
     font-weight: 400;
     font-size: 1.0em;
-    background: #428BCA;
+    background: #4169E1;
     font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 
@@ -19,4 +19,8 @@ html, body {
 
 .navbar-nav.nav-justified > li{
     float:none;
+}
+
+.btn-txt-white a {
+  color: #FFFFFF
 }

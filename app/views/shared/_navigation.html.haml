@@ -1,0 +1,35 @@
+#nav-container
+  .navbar.navbar-default.navbar-centered{role: "navigation"}
+    .navbar-header
+      -# .btn-navbar is used as the toggle for collapsed navbar content
+      %button.navbar-toggle{type:"button", data: {toggle:"collapse",target:"#navbar"}}
+        %span.sr-only
+          = "Toggle Navigation"
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{href:"/"}
+        = "L"
+        %span.glyphicon.glyphicon-heart
+        = "C"
+
+    .collapse.navbar-collapse.navbar-justified#navbar
+      %ul.nav.navbar-nav
+        %li
+          %a#story{href:"#"}
+            = "Our Story"
+        %li
+          %a#bridal_party{href:"#"}
+            = "Bridal Party"
+        %li
+          %a#directions{href:"#"}
+            = "Directions"
+        %li
+          %a#accomodations{href:"#"}
+            = "Accommodations"
+        %li
+          %a#around_columbus{href:"#"}
+            = "Around Columbus"
+        %li
+          %a#wedding_registry{href:"#"}
+            = "Registry"

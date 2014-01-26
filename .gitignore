@@ -30,6 +30,8 @@ test/version_tmp
 tmp
 .DS_Store
 */.DS_Store
+.idea
+
 
 # YARD artifacts
 .yardoc

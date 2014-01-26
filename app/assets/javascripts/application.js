@@ -14,4 +14,3 @@
 //= require jquery_ujs
 //= require jquery-countdown
 //= require bootstrap
-//= require_tree .

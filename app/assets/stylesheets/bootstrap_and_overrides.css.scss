@@ -18,9 +18,17 @@ html, body {
 }
 
 .navbar-nav.nav-justified > li{
-    float:none;
+  float:none;
 }
 
-.btn-txt-white a {
+.btn-txt-white {
   color: #FFFFFF
+}
+
+.list-txt-left > li {
+  text-align: left;
+}
+
+.p-padded {
+  padding-top: 1.000em;
 }

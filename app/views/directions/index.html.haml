@@ -1,5 +1,8 @@
+- content_for :head do
+  = javascript_include_tag "directions"
+
 .row
-  .col-lg-12
+  .col-md-12
     %h3
       = "Ceremony & Reception Venue"
     %p
@@ -16,12 +19,12 @@
 %br
 
 .row
-  .col-lg-12
+  .col-md-12
     %h3
       = "Directions"
 
 .row
-  .col-lg-12
+  .col-md-12
     %h4
       = "Hilton Garden Inn"
       %span.glyphicon.glyphicon-arrow-right
@@ -30,38 +33,52 @@
 %br
 
 .row
-  .col-lg-8
-    %ul
-      %li.pull-left
+  .col-md-12
+    %ul.pull-left.list-txt-left
+      %li
         ="Head west on Lyra Dr"
-      %li.pull-left
+      %li
         ="Take the 1st right onto Polaris Parkway"
-      %li.pull-left
+      %li
         ="Continue straight to stay on Polaris Parkway"
-      %li.pull-left
+      %li
         ="Continue onto Maxtown Road"
-      %li.pull-left
+      %li
         ="Turn left onto Sunbury Road"
-      %li.pull-left
+      %li
         ="Turn left onto Medallion Drive East"
-      %li.pull-left
+      %li
         ="Turn left onto Club Villas Lane"
 
-  .col-lg-2.pull-right
-    %ul.list-unstyled
-      %li.pull-right
-        = "0.1 mi"
-      %li.pull-right
-        = "0.2 mi"
-      %li.pull-right
-        = "2.7 mi"
-      %li.pull-right
-        = "2.2 mi"
-      %li.pull-right
-        = "2.1 mi"
-      %li.pull-right
-        = "0.8 mi"
-      %li.pull-right
-        = "0.1 mi"
+%br
+
+.row
+  .col-md-12
+    %h4
+      = "Port Columbus International Airport"
+      %span.glyphicon.glyphicon-arrow-right
+      = "Hilton Garden Inn"
+
+%br
+
+.row
+  .col-md-12
+    %ul.pull-left.list-txt-left
+      %li
+        ="Take the ramp onto I-670 E"
+      %li
+        ="Merge onto I-670 E"
+      %li
+        ="Take the exit on the left onto I-270 N"
+      %li
+        ="Take exit 26 to merge onto I-71 N"
+      %li
+        ="Take exit 121 for Polaris Parkway"
+      %li
+        ="Keep right at the fork"
+      %li
+        ="Turn left onto Polaris Pkwy"
+      %li
+        ="Turn left onto Lyra Drive"
 
 

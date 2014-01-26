@@ -5,7 +5,7 @@
 window.App = {}
 
 $ ->
-  google.maps.event.addDomListener(window, 'load', window.App.GoogleMapView.initialize)
+ google.maps.event.addDomListener(window, 'load', window.App.GoogleMapView.initialize)
 
 
 window.App.GoogleMapView = initialize: ->

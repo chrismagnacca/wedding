@@ -1,4 +1,6 @@
 WeddingResponsive::Application.routes.draw do
+  get "/around_columbus", to: "around_columbus#index"
+  get "/date_and_time", to: "date_time#index"
   get "/hotel_info", to: "accomodations#index"
   get "/wedding_party", to: "bridal_party#index"
   get "/directions", to: "directions#index"

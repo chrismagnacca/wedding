@@ -64,5 +64,7 @@ window.App.GoogleMapView = initialize: ->
     medallionInfo.open(map, medallionMarker)
   )
 
+  hotelMarker.setMap(map)
   medallionMarker.setMap(map)
-
+  hotelInfo.open(map, hotelMarker)
+  medallionInfo.open(map, medallionMarker)

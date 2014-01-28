@@ -1,5 +1,6 @@
 WeddingResponsive::Application.routes.draw do
-  get "/bridal_party", to: "bridal_party#index"
+  get "/hotel_info", to: "accomodations#index"
+  get "/wedding_party", to: "bridal_party#index"
   get "/directions", to: "directions#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

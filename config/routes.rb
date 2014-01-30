@@ -1,4 +1,5 @@
 WeddingResponsive::Application.routes.draw do
+  get "/rsvp", to: "rsvp#index"
   get "/registry", to: "registry#index"
   get "/our_story", to: "about#index"
   get "/around_columbus", to: "around_columbus#index"
@@ -6,6 +7,8 @@ WeddingResponsive::Application.routes.draw do
   get "/hotel_info", to: "accomodations#index"
   get "/wedding_party", to: "bridal_party#index"
   get "/directions", to: "directions#index"
+
+  resources :rsvp
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

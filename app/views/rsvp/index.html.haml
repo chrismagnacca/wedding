@@ -1,0 +1,15 @@
+.row
+  .col-md-12
+    %h3
+      = "RSVP"
+
+%br
+
+.row
+  .col-md-12
+    = form_tag new_rsvp_path, method: "post"
+    .form-group
+      .form-label.pull-left
+        = label_tag(:invitation_code, "Invitation Code:")
+      .form-field
+        = text_field_tag(:invitation_code, nil, class: "form-control")

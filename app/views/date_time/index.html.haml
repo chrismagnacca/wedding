@@ -1,2 +1,45 @@
-<h1>DateTime#index</h1>
-<p>Find me in app/views/date_time/index.html.erb</p>
+.row
+  .col-md-12
+    %h3
+      = "Events"
+
+%br
+
+.row
+  .col-md-6.pull-left
+    %ul.list-unstyled
+      %li.md-emphasis
+        = "Ceremony"
+      %li
+        = "Saturday, June 28, 2014 | 4:30 PM"
+      %li
+        %p.txt-left.p-padded
+          = "Our ceremony will be held in the Gold Room at the Medallion Club's Banquet Hall. Please enter through the Banquet Hall entrance."
+  .col-md-6.pull-left
+    %ul.list-unstyled
+      %li.md-emphasis
+        = "Reception"
+      %li
+        = "Saturday, June 28, 2014 | 5:00 PM"
+      %li
+        %p.txt-left.p-padded
+          = "Cocktail hour will immediately follow the ceremony and a continuation of our wedding celebration will start at 6:00pm. Bring your dancing shoes!"
+
+%br
+
+.row
+  .col-md-6
+    .col-md-6-image
+      = image_tag "medallion_club.jpg"
+
+  .col-md-6.pull-right
+    %ul.list-unstyled
+      %li.md-emphasis
+        = "Ceremony & Reception Venue"
+      %li
+        = link_to "The Medallion Club", "http://www.medallionclub.com/"
+      %li
+        = "5000 Club Dr"
+      %li
+        = "Westerville, OH 43082"
+

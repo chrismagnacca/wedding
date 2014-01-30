@@ -9,6 +9,17 @@
 }
 
 .divider {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  max-width: 50%;
+  margin: 0.952em auto;
+  border-bottom: 1px dotted black;
+}
+
+.md-emphasis {
+  font-weight: 400;
+  font-size: 1.143em;
+}
+
+.txt-left {
+  text-indent: 0.952em;
+  text-align: left;
 }

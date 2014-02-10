@@ -1,14 +1,25 @@
 namespace :db do
   desc 'generate invitation codes'
-  task generate: :environment do
-    generate_invitation_codes
+  task load: :environment do
+    process_guest_list
   end
 end
 
-def generate_invitation_codes
+require 'csv'
 
-  200.times do |t|
-    p SecureRandom.hex(12)
+def process_guest_list
+  CSV.foreach(
+    File.dirname(__FILE__) + "/../data/guest_list.csv", 
+    col_sep: ",",
+    headers: true,
+    header_converters: true) do |row|
+      invitation_code = SecureRandom.hex(12)
+      Guest.create(
+      name: row["name"],
+      additional_guests: row["additional"],
+      invitation_code: invitation_code
+    )
   end
+
 end
 

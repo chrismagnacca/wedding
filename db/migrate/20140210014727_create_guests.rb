@@ -3,6 +3,7 @@ class CreateGuests < ActiveRecord::Migration
     create_table :guests do |t|
       t.string  :name
       t.string  :invitation_code
+      t.integer :primary_guests
       t.integer :additional_guests
       t.integer :rsvp_id
     end

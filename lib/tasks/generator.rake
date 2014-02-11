@@ -8,18 +8,13 @@ end
 require 'csv'
 
 def process_guest_list
-  CSV.foreach(
-    File.dirname(__FILE__) + "/../data/guest_list.csv", 
-    col_sep: ",",
-    headers: true,
-    header_converters: true) do |row|
-      invitation_code = SecureRandom.hex(12)
+  CSV.foreach(File.dirname(__FILE__) + "/../data/guest_list.csv",  headers: true) do |row|
       Guest.create(
-      name: row["name"],
-      additional_guests: row["additional"],
-      invitation_code: invitation_code
-    )
+        name: row["name"],
+        primary_guests: row["primary_guests"],
+        additional_guests: row["additional"],
+        invitation_code: SecureRandom.hex(12)
+      )
   end
-
 end
 

@@ -7,10 +7,13 @@
 
 .row
   .col-md-12
-    = form_tag new_rsvp_path, method: "post"
+    = form_tag new_rsvp_path, method: "post", class: "form-horizontal"
     .form-group.row
-      .form-label.pull-left.col-md-3
+      .form-label.pull-left.col-md-12
         = label_tag(:invitation_code, "Invitation Code")
-      .form-field.pull-left.col-md-9
+      %br
+      .col-md-4
+      .form-field.col-md-4
         = text_field_tag(:invitation_code, nil, class: "form-control", placeholder: "Enter Invitation Code")
+      .col-md-4
 

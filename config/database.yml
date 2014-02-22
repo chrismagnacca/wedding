@@ -7,10 +7,7 @@ development:
   adapter: postgresql
   database: development
   host: localhost
-  username: wedding
-  password:
-  pool: 5
-  timeout: 5000
+  username: user
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -19,17 +16,11 @@ test:
   adapter: postgresql
   database: test
   host: localhost
-  username: wedding
-  password:
-  pool: 5
-  timeout: 5000
+  username: user
 
 production:
   adapter: postgresql
   database: production
   host: localhost
-  username: wedding
-  password:
-  pool: 5
-  timeout: 5000
+  username: user
 

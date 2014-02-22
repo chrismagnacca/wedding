@@ -2,9 +2,10 @@
   #slides.carousel.slide{data: {ride: 'carousel'}}
     -# indicators
     %ol.carousel-indicators
-      %li.active{data:{target: '#carousel-example', slide_to: '0'}}
-      %li{data:{target: '#carousel-example', slide_to: '1'}}
-      %li{data:{target: '#carousel-example', slide_to: '2'}}
+      %li.active{data:{target: '#slides', slide_to: '0'}}
+      %li{data:{target: '#slides', slide_to: '1'}}
+      %li{data:{target: '#slides', slide_to: '2'}}
+      %li{data:{target: '#slides', slide_to: '3'}}
 
     -# wrapper for slides
     .carousel-inner
@@ -16,8 +17,6 @@
         =image_tag 'home2.gif'
       .item
         =image_tag 'home3.gif'
-      .item
-        =image_tag 'home4.gif'
 
     -# controls
     %a.carousel-control.left{href:'#slides', data: {slide:'prev'}}

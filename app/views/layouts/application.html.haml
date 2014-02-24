@@ -25,3 +25,7 @@
       = render "shared/navigation"
       .jumbotron
         = yield
+
+
+-# google analytics
+= render 'shared/ga' if Rails.env == 'production'

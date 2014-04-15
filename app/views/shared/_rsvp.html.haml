@@ -1,0 +1,12 @@
+.col-md-12
+	.rsvp-form.row
+		.form-label.pull-left.col-md-12
+			= label_tag(:guest, "Guest")
+		%br
+		.col-md-4
+		.form-field.col-md-4
+			= text_field_tag(:attendees, nil, class: "form-control", placeholder: "   ")
+		.col-md-4
+		%br
+		.btn.btn-primary#submit-code
+			= 'Send RSVP'

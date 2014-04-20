@@ -1,3 +1,6 @@
+- content_for :head do
+	= javascript_include_tag "rsvp"
+
 .col-md-12
 	.rsvp-form.row
 		.form-label.pull-left.col-md-12
@@ -40,5 +43,5 @@
 			= text_field_tag(:meal_three, nil, class: "form-control", placeholder: " ")
 		.col-md-4
 		%br
-		.btn.btn-primary#submit-code
+		.btn.btn-primary#submit-rsvp
 			= 'RSVP'

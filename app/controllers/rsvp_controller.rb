@@ -1,13 +1,15 @@
 class RsvpController < ApplicationController
   def index
-
   end
 
   def new
-    # todo: verify params[:code] has not been redeemed
-    # success = Guest.code_redeemed?(params[:code]) || true
+    partial = nil
 
-    partial = render_to_string(template: 'shared/_rsvp', layout: false )
+    if Guest.redeemed?(params[:code])
+      partial = render_to_string(template: 'shared/_rsvp_used', layout: false)
+    else
+      partial = render_to_string(template: 'shared/_rsvp', layout: false )
+    end
 
     respond_to do |format|
       format.json { render json: { success: true, html: partial } }
@@ -16,9 +18,8 @@ class RsvpController < ApplicationController
   end
 
   def rsvp
-    # todo: thank person for RSVP'ing & email rsvp
-    # @user = 'username'
-    # mail(to: @user.email, subject: 'Thanks for RSVP')
+    # RsvpMailer.guest_email(name).deliver
+    # RsvpMailer.notice_email(name).deliver
   end
 
 end

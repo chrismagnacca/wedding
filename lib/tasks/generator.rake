@@ -8,13 +8,16 @@ end
 require 'csv'
 
 def process_guest_list
-  CSV.foreach(File.dirname(__FILE__) + "/../data/guest_list.csv",  headers: true) do |row|
-      Guest.create(
-        name: row["name"],
-        primary_guests: row["primary_guests"],
-        additional_guests: row["additional"],
-        invitation_code: SecureRandom.hex(12)
-      )
-  end
+  codes = []
+  (0..150).each { |n| codes.push({code: SecureRandom.hex(3).to_s.upcase, envelope: n }) }
+
+  codes.each { |code| Guest.create({invitation_code: code[:code],envelope_number: code[:envelope]}) }
+
 end
 
+def dump_guest_list
+  body = Guest.all.to_a.inject([]) { |result, e| result.push("#{e.invitation_code},#{e.envelope_number},#{e.meal_order},#{e.number_attending},#{e.rsvp}")}
+  Guest.all.each do |guest|
+
+  end
+end

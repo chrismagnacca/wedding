@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 20140210014727) do
   enable_extension "plpgsql"
 
   create_table "guests", force: true do |t|
-    t.string  "name"
-    t.string  "envelope_code"
-    t.integer "primary_guests"
-    t.integer "additional_guests"
-    t.boolean "rsvp",              default: false
+    t.string  "invitation_code"
+    t.string  "envelope_number"
+    t.string  "meal_order",       default: ""
+    t.string  "number_attending", default: "0"
+    t.boolean "rsvp",             default: false
   end
 
 end

@@ -1,12 +1,44 @@
 .col-md-12
 	.rsvp-form.row
 		.form-label.pull-left.col-md-12
-			= label_tag(:guest, "Guest")
+			= label_tag(:guests, "Name(s)")
 		%br
 		.col-md-4
 		.form-field.col-md-4
-			= text_field_tag(:attendees, nil, class: "form-control", placeholder: "   ")
+			= text_field_tag(:guest, nil, class: "form-control", placeholder: "Enter Guests' Names")
+		.col-md-4
+		%br
+		.form-label.pull-left.col-md-12
+			= label_tag(:attendees, "Number Attending")
+		%br
+		.col-md-4
+		.form-field.col-md-4
+			= text_field_tag(:attendees, nil, class: "form-control", placeholder: " ")
+		.col-md-4
+		%br
+		.form-label.pull-left.col-md-12
+			= label_tag(:meal_one, "Chicken & Steak Meal")
+		%br
+		.col-md-4
+		.form-field.col-md-4
+			= text_field_tag(:meal_one, nil, class: "form-control", placeholder: " ")
+		.col-md-4
+		%br
+		.form-label.pull-left.col-md-12
+			= label_tag(:meal_two, "Vegetarian Meal")
+		%br
+		.col-md-4
+		.form-field.col-md-4
+			= text_field_tag(:meal_two, nil, class: "form-control", placeholder: " ")
+		.col-md-4
+		%br
+		.form-label.pull-left.col-md-12
+			= label_tag(:meal_three, "Children's Meal")
+		%br
+		.col-md-4
+		.form-field.col-md-4
+			= text_field_tag(:meal_three, nil, class: "form-control", placeholder: " ")
 		.col-md-4
 		%br
 		.btn.btn-primary#submit-code
-			= 'Send RSVP'
+			= 'RSVP'

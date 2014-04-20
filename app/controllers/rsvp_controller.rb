@@ -16,7 +16,7 @@ class RsvpController < ApplicationController
   end
 
   def rsvp
-    # todo: thank person for RSVP'ing & email rsvp 
+    # todo: thank person for RSVP'ing & email rsvp
     # @user = 'username'
     # mail(to: @user.email, subject: 'Thanks for RSVP')
   end

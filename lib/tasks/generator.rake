@@ -3,6 +3,10 @@ namespace :db do
   task load: :environment do
     process_guest_list
   end
+
+  task dump: :environment do
+    dump_guest_list
+  end
 end
 
 require 'csv'

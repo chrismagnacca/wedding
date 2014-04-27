@@ -10,11 +10,34 @@
 		<p>
 			Below is a list of the current state of the RSVPs for your wedding.
 		</p>
-		<p>
-			<% @rows.each do | row |%>
-			<%= row %>
-			<% end %>
-		</p>
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<th>Email Address</th>
+						<th>Guest Names</th>
+						<th>Invitation Code</th>
+						<th>Envelope Number</th>
+						<th>Order Number</th>
+						<th>Number Attending</th>
+						<th>RSVP</th>
+					<tr>
+				</thead>
+				<tbody>
+				<% @guests.each do | guest |%>
+				<tr>
+					<td><%= guest.email_address %></td>
+					<td><%= guest.guest_names %></td>
+					<td><%= guest.invitation_code %></td>
+					<td><%= guest.envelope_number %></td>
+					<td><%= guest.order_number %></td>
+					<td><%= guest.number_attending %></td>
+					<td><%= guest.rsvp %></td>
+				</tr>
+				<% end %>
+			<tbody>
+			</table>
+		<div>
 		<p>
 			Sincerely,
 		</p>

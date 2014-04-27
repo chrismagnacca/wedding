@@ -4,7 +4,7 @@ class Guest < ActiveRecord::Base
 		@guest = Guest.find_by_invitation_code(code)
 
 		if @guest
-			@guest.rsvp
+			!@guest.rsvp
 		else
 			false
 		end

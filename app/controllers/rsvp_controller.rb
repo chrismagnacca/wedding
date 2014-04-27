@@ -6,10 +6,10 @@ class RsvpController < ApplicationController
     @partial = nil
     @code = params[:code]
 
-    if Guest.redeemed?(@code)
-      @partial = render_to_string(template: 'shared/_rsvp_used', layout: false)
-    else
+    if Guest.valid_and_redeemable?(code)
       @partial = render_to_string(template: 'shared/_rsvp', layout: false )
+    else
+      @partial = render_to_string(template: 'shared/_rsvp_used', layout: false)
     end
 
     respond_to do |format|

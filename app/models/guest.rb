@@ -1,6 +1,6 @@
 class Guest < ActiveRecord::Base
 
-	def self.redeemed?(code)
+	def self.valid_and_redeemable?(code)
 		@guest = Guest.find_by_invitation_code(code)
 
 		if @guest
@@ -9,5 +9,5 @@ class Guest < ActiveRecord::Base
 			false
 		end
 	end
-	
+
 end

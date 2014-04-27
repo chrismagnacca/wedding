@@ -41,7 +41,7 @@ class RsvpController < ApplicationController
       @partial = render_to_string(template: 'shared/_rsvp_used', layout: false)
     elsif @guest.update_attributes(@attributes)
       RsvpMailer.guest_email(@guest_names, @email_address).deliver
-      RsvpMailer.notice_email(@guest_names, @meal_order).deliver
+      RsvpMailer.notice_email(@guest_names, @invitation_code, @meal_order).deliver
       @partial = render_to_string(template: 'shared/_rsvp_success', layout: false)
     else
       @partial = render_to_string(template: 'shared/_rsvp_error', layout: false)

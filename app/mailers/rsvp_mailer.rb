@@ -1,5 +1,5 @@
 class RsvpMailer < ActionMailer::Base
-  default from: "chrismagnacca@gmail.com"
+  default from: "Chris Magnacca <chrismagnacca@gmail.com>, Lauren Sapharas <lsapharas@gmail.com>"
 
   def guest_email(names, email)
     @names = names
@@ -10,13 +10,13 @@ class RsvpMailer < ActionMailer::Base
   def notice_email(names)
     @names = names
 
-    mail(to: 'chrismagnacca@gmail.com, lsapharas@gmail.com', subject: "#{names} - RSVP")
+    mail(to: 'Chris Magnacca <chrismagnacca@gmail.com>, Lauren Sapharas <lsapharas@gmail.com>', subject: "#{names} - RSVP")
   end
 
   def list_email(guests)
     @guests = guests
 
-    mail(to: 'chrismagnacca@gmail.com', subject: "RSVP Status")
+    mail(to: 'Chris Magnacca <chrismagnacca@gmail.com>, Lauren Sapharas <lsapharas@gmail.com>', subject: "Current RSVP Status")
   end
 
 end

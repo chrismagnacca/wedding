@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(version: 20140210014727) do
   enable_extension "plpgsql"
 
   create_table "guests", force: true do |t|
+    t.string  "email_address",    default: ""
+    t.string  "guest_names",      default: ""
     t.string  "invitation_code"
     t.string  "envelope_number"
     t.string  "meal_order",       default: ""

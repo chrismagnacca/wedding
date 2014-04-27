@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+	</head>
+	<body>
+		<p>
+			Lauren &amp; Chris,
+		</p>
+		<p>
+			Below is a list of the current state of the RSVPs for your wedding.
+		</p>
+		<p>
+			<% @rows.each do | row |%>
+			<%= row %>
+			<% end %>
+		</p>
+		<p>
+			Sincerely,
+		</p>
+		<p>
+			Automated Emailer
+		</p>
+	</body>
+</html>

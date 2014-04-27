@@ -3,6 +3,7 @@ WeddingResponsive::Application.routes.draw do
 
   get "/rsvp", to: "rsvp#index"
   post "/rsvp/new", to: "rsvp#new"
+  post "/rsvp/create", to: "rsvp#create"
   get "/registry", to: "registry#index"
   get "/our_story", to: "about#index"
   get "/around_columbus", to: "around_columbus#index"

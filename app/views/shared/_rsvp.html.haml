@@ -1,22 +1,26 @@
-- content_for :head do
-	= javascript_include_tag "rsvp"
-
 .col-md-12
 	.rsvp-form.row
 		.form-label.pull-left.col-md-12
-			= label_tag(:guests, "Name(s)")
+			= label_tag(:guest_names, "Name(s)")
 		%br
 		.col-md-4
 		.form-field.col-md-4
-			= text_field_tag(:guest, nil, class: "form-control", placeholder: "Enter Guests' Names")
+			= text_field_tag(:guest_names, nil, class: "form-control", placeholder: "Enter All Guests' Names")
+		.col-md-4
+		%br
+		= label_tag(:email_addr, "Email")
+		%br
+		.col-md-4
+		.form-field.col-md-4
+			= text_field_tag(:email_addr, nil, class: "form-control", placeholder: "Enter Your Email Address")
 		.col-md-4
 		%br
 		.form-label.pull-left.col-md-12
-			= label_tag(:attendees, "Number Attending")
+			= label_tag(:number_attending, "Number Attending")
 		%br
 		.col-md-4
 		.form-field.col-md-4
-			= text_field_tag(:attendees, nil, class: "form-control", placeholder: " ")
+			= text_field_tag(:number_attending, nil, class: "form-control", placeholder: " ")
 		.col-md-4
 		%br
 		.form-label.pull-left.col-md-12
@@ -45,3 +49,6 @@
 		%br
 		.btn.btn-primary#submit-rsvp
 			= 'RSVP'
+		%br
+		.hdn
+			= hidden_field_tag(:invitation_code)

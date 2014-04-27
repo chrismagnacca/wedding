@@ -28,3 +28,17 @@ p.quote {
   font-style: italic;
   font-size: 0.75em;
 }
+
+.error {
+  border: 1px solid red !important;
+}
+
+.rsvp-errors {
+  display: none;
+  height: 0px;
+  padding: 2px;
+  max-width: 60%;
+  float: none;
+  border-radius: 3px;
+  background: #ffc0cb;
+}

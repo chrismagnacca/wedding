@@ -4,7 +4,7 @@ class RsvpController < ApplicationController
 
   def new
     partial = nil
-
+    
     if Guest.redeemed?(params[:code])
       partial = render_to_string(template: 'shared/_rsvp_used', layout: false)
     else

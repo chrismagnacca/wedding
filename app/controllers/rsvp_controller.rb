@@ -22,14 +22,14 @@ class RsvpController < ApplicationController
     @partial = nil
 
     @guest_names = params[:guest_names]
-    @email_addr = params[:email_addr]
+    @email_address = params[:email_addr]
     @invitation_code = params[:invitation_code]
     @number_attending = params[:number_attending]
     @meal_order = params[:meal_order]
 
     @attributes = {
       guest_names: @guest_names,
-      email_address: @email_addr,
+      email_address: @email_address,
       meal_order: @meal_order,
       number_attending: @number_attending,
       rsvp: true
@@ -40,7 +40,7 @@ class RsvpController < ApplicationController
     if  (!@guest) || (@guest.rsvp)
       @partial = render_to_string(template: 'shared/_rsvp_used', layout: false)
     elsif @guest.update_attributes(@attributes)
-      RsvpMailer.guest_email(@guest_names, @email).deliver
+      RsvpMailer.guest_email(@guest_names, @email_address).deliver
       RsvpMailer.notice_email(@guest_names, @meal_order).deliver
       @partial = render_to_string(template: 'shared/_rsvp_success', layout: false)
     else

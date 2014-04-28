@@ -4,7 +4,7 @@
 
 A Rails 4 Website for our Wedding
 
-<br />
+
 
 www.lauren-and-christopher.com
 
